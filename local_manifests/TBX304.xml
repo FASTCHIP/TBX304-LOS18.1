@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- LOS 18.1 stack for Lenovo TB-X304 (MSM8917). Revisions pinned = commits of our verified 2026-11-02 build. -->
+  <remote name="fastchip" fetch="https://github.com/FASTCHIP/" revision="lineage-18.1" />
+
+  <project path="device/lenovo/TBX304" name="android_device_lenovo_TBX304" remote="fastchip"
+           revision="07de7fecf9f12c33175299188ba554f7189d710e" />
+  <project path="device/lenovo/tb-common" name="device_lenovo_tb-common" remote="fastchip"
+           revision="3324b11f720a1e6a5ad6f5f3d2f177390e23c6ac" />
+  <project path="kernel/lenovo/msm8917" name="kernel_lenovo_msm8917" remote="fastchip"
+           revision="16b80b67263ea91dbf3db816784da020e7919acf" />
+  <!-- vendor fork already contains the check_elf_files fix (shared_libs for libts_* HALs) -->
+  <project path="vendor/lenovo" name="vendor_lenovo" remote="fastchip"
+           revision="lineage-18.1-msm8937" />
+</manifest>
